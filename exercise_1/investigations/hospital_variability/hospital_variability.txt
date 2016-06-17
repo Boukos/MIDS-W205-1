@@ -1,0 +1,16 @@
++-----------------+--------------------+
+| measure_id      | variance           |
++-----------------+--------------------+
+| ED_1b           | 66.440951426696780 |
+| ED_2b           | 43.504562255114450 |
+| OP_18b          | 30.911402095957953 |
+| OP_3b           | 19.966463712141973 |
+| OP_23           | 17.642204093361297 |
+| STK_4           | 15.490917620434505 |
+| AMI_7a          | 15.333333333333334 |
+| OP_2            | 14.757352941176471 |
+| OP_21           | 13.614458314482532 |
+| IMM_3_FAC_ADHPCT| 13.171991770820668 |
++-----------------+--------------------+
+
+To find out which procedures have the greatest variability between hospitals, we first get the average score for each procedure in procedure_max_score table. Then for each record in effective_care, we calculate the difference between its score and the average score, which leads us to the table hospital_variability. Finally, using the variability in hospital_variability table, we calculate the variance for each procedure by summing up the absolute values of variability and divided by the total count. The result is shown in the table above.
