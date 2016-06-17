@@ -1,0 +1,19 @@
++---------------------------------+---------------------+------------+----------+------------+
+| hospital_name                   | best_procedure_count| total_score| avg_score| variability|
++---------------------------------+---------------------+------------+----------+------------+
+|GOOD SAMARITAN HOSPITAL          |                  41 |     4059.0 |     99.0 |        0.0 |
+|ST MARY'S MEDICAL CENTER         |                  37 |     3276.0 |     96.4 |       NULL |
+|ST JOSEPH MEDICAL CENTER         |                  36 |     3564.0 |     99.0 |        0.0 |
+|MERCY MEDICAL CENTER             |                  27 |     2385.0 |     95.4 |       NULL |
+|MERCY HOSPITAL                   |                  27 |     2484.0 |     95.5 |       NULL |
+|ST LUKES HOSPITAL                |                  26 |     2484.0 |     95.5 |       90.0 |
+|ST JOSEPH HOSPITAL               |                  24 |     2187.0 |     95.1 |       NULL |
+|SAINT FRANCIS MEDICAL CENTER     |                  22 |     1980.0 |     99.0 |       NULL |
+|JEFFERSON REGIONAL MEDICAL CENTER|                  21 |     2079.0 |     99.0 |        0.0 |
+|ST MARY MEDICAL CENTER           |                  20 |     1782.0 |     99.0 |       NULL |
++---------------------------------+---------------------+------------+----------+------------+
+
+We define the best hospitals as the ones that have the most consistently high scores for a variety of procedures. So for each procedure, we find the hospitals that have the best score (which leads to table hospital_score_info), then count the number of times each hospital appears on this best score list.
+
+The top 10 hospitals with highest counts on the best score list are shown in the table above, along with their total scores, average scores, and variability (defined as the difference between its highest score and lowest score).
+
