@@ -1,1 +1,1 @@
-# MIDS-W205_A1
+# MIDS-W205 Exercises
